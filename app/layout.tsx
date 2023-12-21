@@ -33,12 +33,12 @@ export default function RootLayout({
     <ClerkProvider appearance={{ baseTheme: dark }}>
       <html lang="en">
         <body className={inter.className}>
-          <Toaster />
           <ThemeProvider
             attribute="class"
             forcedTheme="dark"
             storageKey="live-lens"
           >
+            <Toaster theme="light" position="bottom-center" />
             {children}
           </ThemeProvider>
         </body>
