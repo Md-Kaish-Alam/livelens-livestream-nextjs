@@ -9,11 +9,16 @@ import { useViewerToken } from "@/hooks/use-viewer-token";
 import { ChatToggle } from "@/components/chats/chat-toggle";
 import { Chat, ChatSkeleton } from "@/components/chats/chat";
 
+import { InfoCard } from "./info-card";
 import { Header, HeaderSkeleton } from "./header";
 import { Video, VideoSkeleton } from "./video";
+import { AboutCard } from "./about-card";
 
 interface StreamPlayerProps {
-  user: User & { stream: Stream | null };
+  user: User & {
+    stream: Stream | null;
+    _count: { followedBy: number };
+  };
   stream: Stream;
   isFollowing: boolean;
 }
@@ -54,13 +59,21 @@ export const StreamPlayer = ({
             isFollowing={isFollowing}
             name={stream.name}
           />
+          <InfoCard
+            name={stream.name}
+            hostIdentity={user.id}
+            viewerIdentity={identity}
+            thumbnailUrl={stream.thumbnail}
+          />
+          <AboutCard
+            hostName={user.username}
+            hostIdentity={user.id}
+            viewerIdentity={identity}
+            bio={user.bio}
+            followedByCount={user._count.followedBy}
+          />
         </div>
-        <div
-          className={cn(
-            "col-span-1",
-            collapsed && "hidden"
-          )}
-        >
+        <div className={cn("col-span-1", collapsed && "hidden")}>
           <Chat
             viewerName={name}
             hostName={user.username}
@@ -87,5 +100,5 @@ export const StreamPlayerSkeleton = () => {
         <ChatSkeleton />
       </div>
     </div>
-  )
-}
+  );
+};
