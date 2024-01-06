@@ -3,6 +3,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Skeleton } from "@/components/ui/skeleton";
 import { UserAvatar } from "@/components/user-avatar";
+import { LiveBadge } from "@/components/live-badge";
 
 interface ThumbnailProps {
   src: string | null;
@@ -50,6 +51,11 @@ export const Thumbnail = ({
         )}
       />
       {content}
+      {isLive && src && (
+        <div className="absolute top-2 left-2 transition-transform group-hover:translate-x-2 group-hover:-translate-y-2">
+          <LiveBadge />
+        </div>
+      )}
     </div>
   );
 };
