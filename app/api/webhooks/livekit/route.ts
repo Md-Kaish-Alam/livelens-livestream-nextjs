@@ -2,6 +2,7 @@ import { headers } from "next/headers";
 import { WebhookReceiver } from "livekit-server-sdk";
 
 import { db } from "@/lib/db";
+import { NextResponse } from "next/server";
 
 const receiver = new WebhookReceiver(
   process.env.LIVEKIT_API_KEY!,
@@ -41,4 +42,6 @@ export async function POST(req: Request) {
       },
     });
   }
+
+  return NextResponse.json({ event })
 }

@@ -32,7 +32,10 @@ export const Actions = ({
         .then((data) =>
           toast.success(`You are now following ${data.following.username}`)
         )
-        .catch(() => toast.error("Something went wrong. Please try again"));
+        .catch((error: any) => {
+          console.log({ error });
+          toast.error("Something went wrong. Please try again");
+        });
     });
   };
 
@@ -53,7 +56,7 @@ export const Actions = ({
 
     if (isHost) return;
 
-    if (isFollowing) {
+    if (!isFollowing) {
       handleFollow();
     } else {
       handleUnfollow();

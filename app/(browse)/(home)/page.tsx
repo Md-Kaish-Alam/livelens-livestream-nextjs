@@ -1,7 +1,7 @@
 const HomePage = () => {
   return ( 
     <div>
-      Hello world
+      md kaish alam
     </div>
    );
 }
