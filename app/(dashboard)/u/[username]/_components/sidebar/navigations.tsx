@@ -27,7 +27,7 @@ export const Navigation = () => {
     },
     {
       label: "Community",
-      href: `/u/${user?.username}/Community`,
+      href: `/u/${user?.username}/community`,
       icon: Users,
     },
   ];
