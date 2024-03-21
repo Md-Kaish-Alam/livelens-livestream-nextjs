@@ -46,21 +46,21 @@ npm install npm@latest -g
 ### Installation
 - **Clone the repo**
   
-  ```bash
-  git clone https://github.com/your_username_/LiveLens.git
-  ```
+```bash
+git clone https://github.com/Md-Kaish-Alam/livelens-livestream-nextjs.git
+```
 - **Install NPM packages**
   
-  ```bash
-  npm install
-  ```
+```bash
+npm install
+```
 - **Running the project**
   
-  After installation, you can start the project locally using npm command:
-  ```bash
-  npm run dev
-  ```
-  This command starts the developement server on `http://localhost:3000/`. Open your browser and navigate to this address to view the application.
+After installation, you can start the project locally using npm command:
+```bash
+npm run dev
+```
+This command starts the developement server on `http://localhost:3000/`. Open your browser and navigate to this address to view the application.
 
 ### Folder Structure
 Below is an overview of the key directories and files within the LiveLens project:
