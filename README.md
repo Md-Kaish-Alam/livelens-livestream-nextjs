@@ -29,8 +29,8 @@ LiveLens is a state-of-the-art, real-time streaming platform developed using Nex
 - [MySQL](https://www.mysql.com/) - The relational database for storing user and streaming data.
 - [Clerk](https://clerk.dev/) - For secure user authentication and management.
 - [JWT](https://jwt.io/) - Implements JSON Web Tokens for secure data transmission.
-- [Sonner](https://ui.shadcn.com/docs/components/sonner) - Custom notification system (replace with correct link or description).
-- [Uploadthings](https://uploadthing.com/) - Image upload functionality (replace with correct link or description).
+- [Sonner](https://ui.shadcn.com/docs/components/sonner) - Custom notification system.
+- [Uploadthings](https://uploadthing.com/) - Image upload functionality.
 - [livekit-client](https://docs.livekit.io/) & [livekit-server-sdk](https://docs.livekit.io/) - For real-time video and audio streaming.
 
 ## Getting Started
