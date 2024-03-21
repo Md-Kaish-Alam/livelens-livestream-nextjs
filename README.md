@@ -121,5 +121,8 @@ This application is prepared for deployment using Vercel, ensuring a smooth tran
 LiveLens exemplifies the power of modern web technologies to create deeply engaging and interactive user experiences. It stands as a testament to innovation, performance, and user satisfaction. Enjoy exploring and streaming on LiveLens!
  
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 
