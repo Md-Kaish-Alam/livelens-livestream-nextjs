@@ -4,6 +4,8 @@ LiveLens is a state-of-the-art, real-time streaming platform developed using Nex
 
 **Try it out now: [LiveLens Live Demo](https://livelens-livestream-nextjs.vercel.app/)**
 
+**Steps to use LiveLens: [LiveLens User Manual](LiveLens_User_Manual.md)**
+
 ## Application Screenshots
 ![homepage](https://github.com/Md-Kaish-Alam/livelens-livestream-nextjs/assets/82415398/0829cf35-cf66-4c1a-af5c-48e971547da7)
 ![livestreaming image](https://github.com/Md-Kaish-Alam/livelens-livestream-nextjs/assets/82415398/3cbf2aed-36ee-4036-ad8b-1f47ddd47f76)
