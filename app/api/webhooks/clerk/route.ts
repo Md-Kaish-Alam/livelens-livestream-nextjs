@@ -54,6 +54,11 @@ export async function POST(req: Request) {
   // Get the ID and type
   const eventType = evt.type;
 
+  console.log({
+    called: true,
+    payload: payload,
+  });
+
   if (eventType === "user.created") {
     await db.user.create({
       data: {
@@ -91,4 +96,8 @@ export async function POST(req: Request) {
   }
 
   return new Response("", { status: 200 });
+}
+
+export async function GET() {
+  return Response.json({ message: "Hello World!" });
 }
